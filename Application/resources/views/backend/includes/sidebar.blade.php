@@ -125,6 +125,14 @@
                            class="vironeer-sidebar-link @if (request()->segment(3) == 'gateways') current @endif">
                             <p class="vironeer-sidebar-link-title"><span>{{ __('Payment Gateways') }}</span></p>
                         </a>
+                        <a href="{{ route('admins.index') }}"
+                           class="vironeer-sidebar-link @if (request()->segment(3) == 'admins') current @endif">
+                            <p class="vironeer-sidebar-link-title"><span>{{ __('Manage Admins') }}</span></p>
+                        </a>
+                        <a href="{{ route('admin.settings.smtp') }}"
+                           class="vironeer-sidebar-link @if (request()->segment(3) == 'smtp') current @endif">
+                            <p class="vironeer-sidebar-link-title"><span>{{ __('SMTP Deatils') }}</span></p>
+                        </a>
                         <a href="{{ route('admin.settings.taxes.index') }}"
                            class="vironeer-sidebar-link @if (request()->segment(3) == 'taxes') current @endif">
                             <p class="vironeer-sidebar-link-title"><span>{{ __('Manage Taxes') }}</span></p>
@@ -142,18 +150,12 @@
 {{--                            class="vironeer-sidebar-link @if (request()->segment(3) == 'storage') current @endif">--}}
 {{--                            <p class="vironeer-sidebar-link-title"><span>{{ __('Storage Providers') }}</span></p>--}}
 {{--                        </a>--}}
-{{--                        <a href="{{ route('admin.settings.smtp') }}"--}}
-{{--                            class="vironeer-sidebar-link @if (request()->segment(3) == 'smtp') current @endif">--}}
-{{--                            <p class="vironeer-sidebar-link-title"><span>{{ __('SMTP Deatils') }}</span></p>--}}
-{{--                        </a>--}}
+
 {{--                        <a href="{{ route('pages.index') }}"--}}
 {{--                            class="vironeer-sidebar-link @if (request()->segment(3) == 'pages') current @endif">--}}
 {{--                            <p class="vironeer-sidebar-link-title"><span>{{ __('Manage Pages') }}</span></p>--}}
 {{--                        </a>--}}
-                        <a href="{{ route('admins.index') }}"
-                            class="vironeer-sidebar-link @if (request()->segment(3) == 'admins') current @endif">
-                            <p class="vironeer-sidebar-link-title"><span>{{ __('Manage Admins') }}</span></p>
-                        </a>
+
 {{--                        <a href="{{ route('admin.settings.extensions.index') }}"--}}
 {{--                            class="vironeer-sidebar-link @if (request()->segment(3) == 'extensions') current @endif">--}}
 {{--                            <p class="vironeer-sidebar-link-title"><span>{{ __('Extensions') }}</span></p>--}}

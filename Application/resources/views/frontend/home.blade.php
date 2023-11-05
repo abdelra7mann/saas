@@ -14,7 +14,7 @@
         @endif
     @endpush
     @include('frontend.includes.styles')
-{{--    {{--    {!! head_code() !!}--}}--}}
+   {{--    {!! head_code() !!}--}}
 </head>
 
 @include('frontend.includes.adblock-detection')

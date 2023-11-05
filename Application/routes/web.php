@@ -71,6 +71,11 @@ Route::group([
                 Route::get('general', 'GeneralController@index')->name('general');
                 Route::post('general/update', 'GeneralController@update')->name('general.update');
 
+                Route::get('smtp', 'SmtpController@index')->name('smtp');
+                Route::post('smtp/update', 'SmtpController@update')->name('smtp.update');
+                Route::post('smtp/test', 'SmtpController@test')->name('smtp.test');
+
+
                 Route::resource('gateways', 'GatewayController', ['only' => ['index', 'edit', 'update']])->middleware('saas');
                 Route::resource('taxes', 'TaxController')->middleware('saas');
             });
